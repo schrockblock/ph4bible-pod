@@ -17,12 +17,12 @@ PH4BibleManager is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "PH4BibleManager"
+pod "PH4BibleManager", git: "https://github.com/schrockblock/ph4bible-pod"
 ```
 
 ## Author
 
-Elliot, elliot.schrock@gmail.com
+Elliot Schrock
 
 ## License
 
