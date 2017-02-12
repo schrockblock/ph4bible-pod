@@ -2,11 +2,13 @@ use_frameworks!
 
 target 'PH4BibleManager_Example' do
   pod 'PH4BibleManager', :path => '../'
+  pod 'SQLite.swift'
+  pod "BibleManager", git: "https://github.com/ThryvInc/bible-manager-ios.git"
 
   target 'PH4BibleManager_Tests' do
     inherit! :search_paths
 
     pod 'Quick', '~> 1.0.0'
-  pod 'Nimble', '~> 5.1.1'
+    pod 'Nimble', '~> 5.1.1'
   end
 end

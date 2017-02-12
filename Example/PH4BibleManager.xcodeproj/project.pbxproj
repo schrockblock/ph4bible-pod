@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4901A8F51E50CBC500C8064E /* PH4BibleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A8F41E50CBC500C8064E /* PH4BibleManager.swift */; };
+		4901A8F71E50CC3700C8064E /* PH4BibleManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A8F61E50CC3700C8064E /* PH4BibleManagerSpec.swift */; };
+		4901A9021E50D9A400C8064E /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901A9011E50D9A400C8064E /* DBManager.swift */; };
+		4901A9041E50F2B400C8064E /* bible.db in Resources */ = {isa = PBXBuildFile; fileRef = 4901A9031E50F2B400C8064E /* bible.db */; };
 		494C5FD6502338F9B7F1D428 /* Pods_PH4BibleManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC849BC063D6640B482E6913 /* Pods_PH4BibleManager_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		83B71E7A5697DA423494CE0E /* Pods_PH4BibleManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106524BD6B26B44F99BC4983 /* Pods_PH4BibleManager_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +33,12 @@
 /* Begin PBXFileReference section */
 		106524BD6B26B44F99BC4983 /* Pods_PH4BibleManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PH4BibleManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3356A66C59A28C13BE7FFAF4 /* Pods-PH4BibleManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PH4BibleManager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PH4BibleManager_Example/Pods-PH4BibleManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		340DDCEF1C9014DE4CCE7DDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		545C8A3675EA77DD62F8DD66 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		340DDCEF1C9014DE4CCE7DDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4901A8F41E50CBC500C8064E /* PH4BibleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PH4BibleManager.swift; path = ../../PH4BibleManager/Classes/PH4BibleManager.swift; sourceTree = "<group>"; };
+		4901A8F61E50CC3700C8064E /* PH4BibleManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PH4BibleManagerSpec.swift; sourceTree = "<group>"; };
+		4901A9011E50D9A400C8064E /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = ../../PH4BibleManager/Classes/DBManager.swift; sourceTree = "<group>"; };
+		4901A9031E50F2B400C8064E /* bible.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bible.db; sourceTree = "<group>"; };
+		545C8A3675EA77DD62F8DD66 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PH4BibleManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PH4BibleManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +48,11 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PH4BibleManager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PH4BibleManager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6B5AD4B435DB5317E5CC7468 /* Pods-PH4BibleManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PH4BibleManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PH4BibleManager_Tests/Pods-PH4BibleManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		99A4281916778ED3F200E29E /* Pods-PH4BibleManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PH4BibleManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PH4BibleManager_Tests/Pods-PH4BibleManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BC849BC063D6640B482E6913 /* Pods_PH4BibleManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PH4BibleManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4605E7AF2A91060EFD8D7E /* Pods-PH4BibleManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PH4BibleManager_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PH4BibleManager_Example/Pods-PH4BibleManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D112D93B8F04402DF04C4860 /* PH4BibleManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PH4BibleManager.podspec; path = ../PH4BibleManager.podspec; sourceTree = "<group>"; };
+		D112D93B8F04402DF04C4860 /* PH4BibleManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PH4BibleManager.podspec; path = ../PH4BibleManager.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,8 @@
 		607FACD21AFB9204008FA782 /* Example for PH4BibleManager */ = {
 			isa = PBXGroup;
 			children = (
+				4901A9011E50D9A400C8064E /* DBManager.swift */,
+				4901A8F41E50CBC500C8064E /* PH4BibleManager.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -107,6 +115,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4901A9031E50F2B400C8064E /* bible.db */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -115,7 +124,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				4901A8F61E50CC3700C8064E /* PH4BibleManagerSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -215,9 +224,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0810;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -248,6 +259,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				4901A9041E50F2B400C8064E /* bible.db in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +373,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				4901A8F51E50CBC500C8064E /* PH4BibleManager.swift in Sources */,
+				4901A9021E50D9A400C8064E /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				4901A8F71E50CC3700C8064E /* PH4BibleManagerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +508,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -507,6 +522,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -526,6 +542,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PH4BibleManager_Example.app/PH4BibleManager_Example";
 			};
 			name = Debug;
 		};
@@ -541,6 +559,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PH4BibleManager_Example.app/PH4BibleManager_Example";
 			};
 			name = Release;
 		};

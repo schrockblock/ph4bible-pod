@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BibleManager
 
 class ViewController: UIViewController {
 
@@ -21,4 +22,3 @@ class ViewController: UIViewController {
     }
 
 }
-

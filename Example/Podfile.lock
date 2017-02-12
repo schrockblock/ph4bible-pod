@@ -1,0 +1,37 @@
+PODS:
+  - BibleManager (0.1.0)
+  - Nimble (5.1.1)
+  - PH4BibleManager (0.1.0)
+  - Quick (1.0.0)
+  - SQLite.swift (0.11.2):
+    - SQLite.swift/standard (= 0.11.2)
+  - SQLite.swift/standard (0.11.2)
+
+DEPENDENCIES:
+  - BibleManager (from `https://github.com/ThryvInc/bible-manager-ios.git`)
+  - Nimble (~> 5.1.1)
+  - PH4BibleManager (from `../`)
+  - Quick (~> 1.0.0)
+  - SQLite.swift
+
+EXTERNAL SOURCES:
+  BibleManager:
+    :git: https://github.com/ThryvInc/bible-manager-ios.git
+  PH4BibleManager:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  BibleManager:
+    :commit: 52911421cbba05d68f4dd57d6a92eb98a6f95930
+    :git: https://github.com/ThryvInc/bible-manager-ios.git
+
+SPEC CHECKSUMS:
+  BibleManager: 086c00356d9646f54639412aafddc1faff7af6a9
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  PH4BibleManager: 1ed228c42696cb202899c6601e940111ca1107a4
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  SQLite.swift: 670c3e9e0a806bbfd56a3de5d530768dc0e6fe7c
+
+PODFILE CHECKSUM: 4da62c323752c172b0606ec1b41f76748f38bb3f
+
+COCOAPODS: 1.1.1
