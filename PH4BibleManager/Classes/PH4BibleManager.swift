@@ -27,22 +27,16 @@ public class PH4BibleManager: BibleManager {
         return lazyManager 
     }()
     
-    fileprivate static let ph4BibleManager: PH4BibleManager = PH4BibleManager(sourceFilePath: Bundle.main.path(forResource: "bible", ofType: "db"))
-    public static var bibleManager: BibleManager { get {
-            return ph4BibleManager
-        }
-        set{
-            
-        }
-    }
+    public static let ph4BibleManager: PH4BibleManager = PH4BibleManager(sourceFilePath: Bundle.main.path(forResource: "bible", ofType: "db"))
     
-    public init(sourceFilePath: String?) {
+    init(sourceFilePath: String?) {
+        super.init()
         if let file = sourceFilePath {
             self.sourceFilePath = file
         }
     }
     
-    public func books(completion: ((Array<Book>) -> Void)) {
+    open override func books(completion: ((Array<Book>) -> Void)) {
         var books = Array<Book>()
         
         let columns = BookNumber + "," + BookName + "," + BookAbbreviation
@@ -59,7 +53,7 @@ public class PH4BibleManager: BibleManager {
         completion(books)
     }
     
-    public func numberOfChapters(of book: Book, completion: ((Int64) -> Void)) {
+    open override func numberOfChapters(of book: Book, completion: ((Int64) -> Void)) {
         var numberOfChapters: Int64 = 0
         
         let selectStatement = "SELECT " + VerseChapter + " FROM " + VersesTable
@@ -79,7 +73,7 @@ public class PH4BibleManager: BibleManager {
         completion(numberOfChapters)
     }
     
-    public func verses(of book: Book, chapter: Int64, completion: ((Array<Verse>) -> Void)){
+    open override func verses(of book: Book, chapter: Int64, completion: ((Array<Verse>) -> Void)){
         var verses = Array<Verse>()
         
         let columns = VerseNumber + "," + VerseText
