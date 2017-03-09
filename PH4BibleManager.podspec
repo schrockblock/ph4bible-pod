@@ -9,20 +9,13 @@
 Pod::Spec.new do |s|
   s.name             = 'PH4BibleManager'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PH4BibleManager.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Parses an sqlite db of bible verses into objects from bible manager pod'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Parses an sqlite db of bible verses into objects from bible manager pod
                        DESC
 
   s.homepage         = 'https://github.com/schrockblock/ph4bible-pod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Elliot Schrock' => '' }
   s.source           = { :git => 'https://github.com/schrockblock/ph4bible-pod.git', :tag => s.version.to_s }
@@ -32,11 +25,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'PH4BibleManager/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PH4BibleManager' => ['PH4BibleManager/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SQLite.swift'
+  s.dependency 'BibleManager'
 end
